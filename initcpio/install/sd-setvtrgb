@@ -8,7 +8,7 @@ build() {
     add_file `readlink -e /etc/vtrgb` /etc/vtrgb
     add_binary setvtrgb
     add_systemd_unit "setvtrgb.service"
-    add_symlink "/usr/lib/systemd/system/initrd.target.wants/setvtrgb.service" "setvtrgb.service"
+    add_symlink "/usr/lib/systemd/system/initrd.target.wants/setvtrgb.service" "../setvtrgb.service"
 }
 
 
